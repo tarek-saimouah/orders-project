@@ -23,12 +23,16 @@ export const SortingParams = createParamDecorator(
     // check the format of the sort query param
     const sortPattern = /^([a-zA-Z0-9]+):(asc|desc)$/;
     if (!sort.match(sortPattern))
-      throw new NotAcceptableException('Invalid sort parameter');
+      throw new NotAcceptableException(
+        'Invalid sort parameter, allowed(asc|desc)',
+      );
 
     // extract the property name and direction and check if they are valid
     const [property, direction] = sort.split(':');
     if (!validParams.includes(property))
-      throw new NotAcceptableException(`Invalid sort property: ${property}`);
+      throw new NotAcceptableException(
+        `Invalid sort property: ${property}, allowed: [${validParams}]`,
+      );
 
     return { property, direction };
   },
