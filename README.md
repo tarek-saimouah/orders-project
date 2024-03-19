@@ -4,7 +4,7 @@ Nest JS REST API sample project with swagger documentation.<br/>
 The repository is a basic nestjs app (users, products, orders) with swagger and prisma.<br/>
 This project is presented for an article I wrote on <strong>Medium</strong>, providing a tutorial about a clean and reusable solution for implementing sorting params in a GET API endpoint using NestJS, Prisma and Swagger, utilizing the custom decorators feature.<br/>
 
-- [Full article on Medium](https://medium.com/@tareksaimouah/implementing-sorting-params-with-nestjs-prisma-and-swagger-a9837e5bc8e5)
+- [Full article on Medium](https://medium.com/@tareksaimouah/implementing-sorting-parameters-with-nestjs-prisma-and-swagger-a9837e5bc8e5)
 
 ## Tech Stack
 
